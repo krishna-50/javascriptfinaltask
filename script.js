@@ -89,7 +89,6 @@ function displayEmployees(arr) {
         card.className = "card";
 
         card.innerHTML = `
-            <img src="${user.image}">
             <h3>${user.name}</h3>
 
             <p>Age: ${user.age}</p>
