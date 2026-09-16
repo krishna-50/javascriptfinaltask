@@ -35,7 +35,6 @@ function fetchEmployees() {
 
                 user.name = user.firstName + " " + user.lastName;
 
-                // Convert API departments into our simple departments
                 if (user.company.department == "Engineering") {
                     user.department = "IT";
                 }
@@ -346,3 +345,4 @@ setTimeout(function() {
     fetchEmployees();
 
 }, 500);
+
