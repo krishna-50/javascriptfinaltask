@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+
+    <p id="date"></p>
+
+    <div class="search">
+        <input type="text" id="search" placeholder="Seach Employee">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="buttons">
+        <button onclick="filterDepartment('All')">All</button>
+        <button onclick="filterDepartment('IT')">IT</button>
+        <button onclick="filterDepartment('HR')">HR</button>
+        <button onclick="filterDepartment('Finance')">Finance</button>
+        <button onclick="filterDepartment('Marketing')">Marketing</button>
+    </div>
+
+    <p id="msg">Loading employees...</p>
+
+    <h2 id="count">Total Employees: 0</h2>
+
+    <div id="cards"></div>
+
+    <hr>
+
+    <h2>ADD EMPLOYEE</h2>
+
+    <div class="form">
+
+        <input type="text" id="name" placeholder="Name">
+
+        <input type="number" id="age" placeholder="Age">  <hr>
+
+        <input type="text" id="email" placeholder="Email">
+
+        <select id="department">
+            <option value="">Select Department</option>
+            <option value="IT">IT</option>
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+            <option value="Marketing">Marketing</option>
+        </select>
+
+        <input type="number" id="salary" placeholder="Salary">
+
+        <button onclick="addEmployee()">Add Employee</button>
+
+        <p id="error"></p>
+
+    </div>
+
+    <hr>
+
+    <h2>SALARY DETAILS</h2>
+
+    <p id="salaryDetails"></p>
+
+    <h3>Highest Paid Employee</h3>
+
+    <p id="high"></p>
+
+    <hr>
+
+    <h2>SORT EMPLOYEES</h2>
+
+    <button onclick="sortName()">Sort by Name</button>
+    <button onclick="sortAge()">Sort by Age</button>
+    <button onclick="sortSalary()">Sort by Salary</button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
